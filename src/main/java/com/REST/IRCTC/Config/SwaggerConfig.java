@@ -16,10 +16,10 @@ public class SwaggerConfig {
 	@Bean
 	public Docket apiDocument() {
 		return new Docket(DocumentationType.SWAGGER_2)
-																			.select()
-																			.apis(RequestHandlerSelectors.basePackage("com.REST.IRCTC.Controller"))
-																			.paths(PathSelectors.any())
-																			.build();
+					.select()
+					.apis(RequestHandlerSelectors.basePackage("com.REST.IRCTC.Controller"))
+					.paths(PathSelectors.any())
+					.build();
 	}
 	
 }
